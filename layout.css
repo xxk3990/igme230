@@ -1,0 +1,44 @@
+h1 {
+    color: black;
+    text-align: center;
+    font-size: 40px;
+    font-family: didot;
+    /* setting color, text location, font size and family for h1 */
+}
+
+h4 {
+color: black;
+text-align: left;
+font-weight: normal;
+/* styles for h4 */
+}
+
+#portrait {
+        width:20%;
+        float: left; /* width and location for the image */
+}
+
+
+#exerciseList{
+    list-style: none; /* no bullet points */
+    text-align: center;
+    width: 30%; /* width of text in the list*/
+    columns: 2; /* puts list items side by side */
+}
+#projList {
+    list-style: none; /* again no bullet points */
+    width: 40%;
+    float: right; /* project list on the right of exercise list */
+}
+
+li {
+    padding-bottom: 20px; /* spacing inbetween list items */
+    
+}
+
+img{
+    max-width: 300px; /* image max width */
+}
+body {
+    background-color: darkgrey;
+}
