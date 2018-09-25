@@ -30,7 +30,7 @@ aside {
     margin-top: 7px;
 }
 @media screen and (min-width: 620px) { 
-}
+
 aside, nav {
     float: left;
     width: 20%;
@@ -39,4 +39,5 @@ article {
     float: left;
     width: 60%;
     padding: 0 20px;
+}
 }
