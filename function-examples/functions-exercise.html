@@ -39,18 +39,28 @@
         foods.push("bacon");
         foods.push("pizza");
         foods.push("burgers");
-       for (let i = 0; i < colors.length; i++) {
-           let color = document.createElement("LI");
-           let textNode = document.createTextNode(colors[i]);
-           color.appendChild(textNode);
-           document.querySelector("#colorsList").appendChild(color);
+    //    for (let i = 0; i < colors.length; i++) {
+    //        let color = document.createElement("LI");
+    //        let textNode = document.createTextNode(colors[i]);
+    //        color.appendChild(textNode);
+    //        document.querySelector("#colorsList").appendChild(color);
+    //     }
+        // for (let i = 0; i < foods.length; i++) {
+        //     let food = document.createElement("LI");
+        //     let textNode = document.createTextNode(foods[i]);
+        //     food.appendChild(textNode);
+        //     document.querySelector("#foodsList").appendChild(food);
+        // }
+        function createList(listElement, array) {
+            for (let i = 0; i < array.length; i++) {
+           let arrayNode = document.createElement("LI");
+           let textNode = document.createTextNode(array[i]);
+           arrayNode.appendChild(textNode);
+           listElement.appendChild(arrayNode);
         }
-        for (let i = 0; i < foods.length; i++) {
-            let food = document.createElement("LI");
-            let textNode = document.createTextNode(foods[i]);
-            food.appendChild(textNode);
-            document.querySelector("#foodsList").appendChild(food);
         }
+        createList(document.querySelector("#colorsList"), colors);
+        createList(document.querySelector("#foodsList"), foods);
     </script>
     
 </body>
