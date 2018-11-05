@@ -92,7 +92,7 @@ h3 {
 } 
 
 .partyListImages img{
-    display: inline-block;
+    display: inline;
     width: 100%;
     margin: auto;
     position: relative;
