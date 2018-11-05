@@ -92,7 +92,7 @@ h3 {
 } 
 
 .partyListImages img{
-    display: inline;
+    display: inline-block;
     width: 100%;
     margin: auto;
     position: relative;
@@ -101,12 +101,12 @@ h3 {
 }
 
 #partyListMain {
-    max-width: 400px;
-    max-height: 400px;
+    max-width: 300px;
+    max-height: 300px;
 }
 #partyListDatabase {
-    max-width: 400px;
-    max-height: 400px;
+    max-width: 300px;
+    max-height: 300px;
 }
 #partyListDescription {
     display:inline-block;
