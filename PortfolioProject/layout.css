@@ -85,8 +85,7 @@ h3 {
     margin: .5rem auto;
 }
  .partyListImages {
-     align-content: center;
-    grid-column: 1/ span 2;
+    grid-column: 2/ span 2;
     width: 100%;
     margin: auto;
 } 
@@ -94,10 +93,10 @@ h3 {
 .partyListImages img{
     display: inline-block;
     width: 100%;
-    margin: auto;
+    margin: 0 auto;
     position: relative;
-    left: 10%; 
-    margin: auto 400px auto auto;
+    left: 20%; 
+    margin-right: 10%;
 }
 
 #partyListMain {
