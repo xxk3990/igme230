@@ -1,0 +1,247 @@
+* {
+    box-sizing: border-box;
+    font-family:didot;
+    color: white;
+
+}
+h1 {
+    text-align: center;
+}
+.navBar {
+    text-decoration: none;
+    list-style-type: none;
+    margin: auto;    
+}
+.navBar li {
+    display: inline-block;
+    background-color: black;
+    border: 1px solid white;
+    color: white;
+    width: 70px;
+    height: 50px;
+    overflow: hidden;
+    padding: 14px 9px;
+    margin-bottom: 20px;
+}
+.navBar li a {
+    text-decoration: none;
+}
+h3 {
+    text-align: center;
+}
+#contact {
+    text-align: left;
+    float: left;
+}
+#aboutMe {
+    display:inline-block;
+    text-align: center;
+    max-width:60%;
+    padding-left: 20px;
+}
+#description {
+    display:inline-block;
+    text-align:center;
+    margin: 0 auto;
+    padding-left: 30px;
+    font-size: 22px;
+}
+#projectPage {
+    text-align: center;
+    font-size: 30px;
+}
+#allProjects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: .5rem;
+    max-width: 95vw;
+    margin: .5rem auto;
+}
+.project{
+    display: block;
+    width: 100%;
+    border-color: black;
+    border: 2px;
+    border-radius: 5px;
+}
+.projectLabel{
+    font-size: 20px;
+    max-width: 350px;
+    margin-left: 10px;
+}
+.projectPhoto{
+   border-radius: 1em;
+    max-width: 350px;
+    transition: all .2s ease-in-out; 
+}
+.projectPhoto:hover { 
+    transform: scale(1.1, 1.1); 
+}
+.partyWrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: .5rem;
+    max-width: 95vw;
+    margin: .5rem auto;
+}
+ .partyListImages {
+     align-content: center;
+    grid-column: 1/ span 2;
+    width: 100%;
+    margin: auto;
+} 
+
+.partyListImages img{
+    width: 100%;
+    margin: auto;
+    position: relative;
+    left: 10%; 
+    margin: auto 400px auto auto;
+}
+
+#partyListMain {
+    max-width: 400px;
+    max-height: 400px;
+}
+#partyListDatabase {
+    max-width: 400px;
+    max-height: 400px;
+}
+#partyListDescription {
+    display:inline-block;
+    text-align: center;
+    width: 100%;
+    padding-left: 80px;
+    padding-right: 80px;
+    font-size: 22px;
+}
+
+#partyListLinks {
+    font-size: 30px;
+    display: flex;
+    list-style-type: none;
+    flex-direction: row;
+    justify-content: space-around;
+    transition: all .2s ease-in-out; 
+    margin: 50px auto;
+}
+#partyListLinks li:hover {
+    transform: scale(1.1, 1.1);
+}
+.carProjectWrapper {
+    display: grid;
+    display: inline-block;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: .5rem;
+    max-width: 95vw;
+    margin: .5rem auto;
+}
+.carImages {
+    grid-column: 2/ span 2;
+}
+.carImages img {
+  
+    width: 100%;
+    left: 5%; 
+    position: relative;
+    margin-left: 10px;
+}
+#carProjDescription {
+    display:inline-block;
+    text-align:center;
+    margin: 0 50px auto 50px;
+    padding-left: 30px;
+    font-size: 22px;
+}
+#carProjLinks {
+    font-size: 30px;
+    display: flex;
+    list-style-type: none;
+    flex-direction: row;
+    justify-content: space-around;
+    transition: all .2s ease-in-out;
+    margin: 50px auto;
+}
+#carProjLinks li:hover {
+    transform: scale(1.1, 1.1);  
+}
+.genAWrapper {
+    display: grid;
+  display: inline-block;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 1rem;
+    max-width: 95vw;
+    margin: .5rem auto;  
+}
+.GAProjImage {
+    grid-column: 1/ span 1;
+    width: 100%; 
+}
+.GAProjImage img {
+    width: 100%;
+    position: relative; 
+    margin: auto 400px auto 400px;
+}
+#genAPage {
+    max-width: 400px;
+    max-height: 400px;
+}
+#genADescription {
+    text-align: center;
+    margin: 0 50px auto 50px;
+    font-size: 22px; 
+}
+#genALinks {
+    font-size: 30px;
+    display: flex;
+    list-style-type: none;
+    flex-direction: row;
+    justify-content: space-around;
+    transition: all .2s ease-in-out;
+    margin: 50px auto; 
+}
+#genALinks li:hover {
+    transform: scale(1.1, 1.1);  
+}
+.profiles {
+    font-size: 30px;
+    display:inline-block;
+    text-decoration: none;
+    list-style-type: none;   
+    margin-left: 30%;
+}
+.contact li {
+    color: white;
+    width: 70px;
+    height: 50px;
+    overflow: hidden;
+    padding: 14px 9px;
+    margin-bottom: 20px;
+}
+
+#resume {
+    text-align: center;
+    margin-left: 20%;
+    margin-right: 20%;
+
+}
+.about {
+    font-size: 20px;
+    text-align: center;
+    margin-left: 20%;
+    margin-right: 20%; 
+}
+img {
+    max-width: 300px;
+}
+body {
+    background-color: #054B93;
+}
+ @media screen and (width: 480px) { 
+    html {
+        flex-direction: column;
+    }
+    #aboutMe, #description, #contact {
+        max-width: 80%;
+    }
+}
