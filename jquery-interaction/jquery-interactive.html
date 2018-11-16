@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Week 12 Interactivity</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="jquery.slidereveal.min.js"></script>
+    <style>
+            nav {
+            display: flex;
+            flex-direction: column; 
+            align-items: center;
+        }
+
+        #dropHead {
+            height: 50px;
+            width: 125px;
+            border: 1px solid;
+            text-align: center;
+            background-color: blue;
+            border: 1px solid black;
+            color: black;   
+        }
+
+        #menuItem {
+            height: 50px;
+            width: 125px;
+            top: 25px;
+            background-color: forestgreen;
+            border: 1px solid black;
+            border-top: none;
+            color: black;
+            text-decoration: none;
+            display: none;
+        }
+        #sideBar {
+            display: flex;
+            flex-direction: row; 
+            align-items: flex-start;
+            max-width: 20%;
+            left: 0px;
+          
+        }
+        #showHide {
+            border: 1px solid black;
+            max-width: 90px;
+            position: fixed;
+        }
+        #show {
+            font-size: 25px;
+        }
+        #hide {
+            font-size: 25px;
+            display: none;
+        }
+        .sideList li {
+        text-decoration: none;
+        list-style-type: none;  
+        display: inline-block;
+        animation-name: entrance;
+        animation-duration: 0.75s;
+        animation-fill-mode: both;
+        }
+        @keyframes entrance {
+            from {transform: translateX(25px)}
+            to {transform: translate(65px)}
+        }
+            
+            
+            </style>
+</head>
+
+<body>  
+        <nav>
+        <div id = "dropHead">Click for no reason!</div>
+            <div id = "menuItem">
+                <ul>
+                <li>no reason</li>
+                </ul>
+            <div>
+                </nav>
+    <div id = sideBar>
+            <div id = "showHide">
+            <span id="show">hide</span>
+            <span id="hide">show</span>
+        </div>
+        <div class = "sideList">
+            <ul>
+                <li>Link 1</li>
+                <li>Link 2</li>
+                <li>Link 3</li>
+            </ul>
+        </div>
+    </div>
+            
+    <script>
+
+            $("#dropHead").click(function () {
+                $("#menuItem").slideToggle("slow");
+                $("#menuItem:hidden").show();
+            });
+            $("#hide").click(function () {
+                $("#hide").toggle();
+                $(".sideList").show();
+                $("#show").toggle();
+            });
+            $("#show").click(function() {
+                $("#show").toggle();
+                $(".sideList").hide();
+                $("#hide").toggle();
+
+            });
+            
+                $("#hide").toggle();
+                $(".sideList").hide();
+                $("#show").toggle();
+            
+        </script>
+
+</body>
+</html>
