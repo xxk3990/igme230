@@ -1,0 +1,19 @@
+<p id = "verse1">Whose cat is that? I think I know.<br>
+Its owner is quite happy though.<br>
+Full of joy like a vivid rainbow,<br>
+I watch him laugh. I cry hello.<br></p>
+
+<p id = "verse2">He gives his cat a shake,<br>
+And laughs until her belly aches.<br>
+The only other sound's the break,<br>
+Of distant waves and birds awake.<br></p>
+
+<p id = "verse3">The cat is small, happy and deep,<br>
+But he has promises to keep,<br>
+After cake and lots of sleep.<br>
+Sweet dreams come to him cheap.<br></p>
+
+<p id = "verse4">He rises from his gentle bed,<br>
+With thoughts of kittens in his head,<br>
+He eats his jam with lots of bread.<br>
+Ready for the day ahead.<br></p>
