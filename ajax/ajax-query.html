@@ -6,8 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <title>Week 14 Ajax exercise</title>
+    <title>Initial AJAX File</title>
 
     <style>
         html,
@@ -56,18 +55,17 @@
 
 <body>
     <div id="wrapper">
-        <h1>Week 14 Ajax exercise</h1>
+        <h1>AJAX Example</h1>
 
-        <h2>"Whose Cat is That?"<br>
-            <span class="author">randomly generated on <a href="https://www.poem-generator.org.uk/">poem-generator.org</a></span></h2>
+        <h2>In Memory of William B. Yeats (Third Stanza)<br>
+            <span class="author">by W.H. Auden (1907-1973)</span></h2>
 
         <form>
             <label for="verse-choose">Choose a verse</label>
             <select id="verse-choose" name="verse-choose">
-                <option value="verse1">Verse 1</option>
-                <option value="verse2">Verse 2</option>
-                <option value="verse3">Verse 3</option>
-                <option value="verse4">Verse 4</option>
+                <option value="verse1-2.txt">Verse 1-2</option>
+                <option value="verse3-4.txt">Verse 3-4</option>
+                <option value="verse5-6.txt">Verse 5-6</option>
             </select>
         </form>
 
@@ -78,18 +76,25 @@
 
     </div>
     <script>
-        let poem = "myPoem.txt";
-        let verse = ("verse1");
-        let verseString = (poem + " #" + verse);
-        $("#verse-choose").val(verse);
-        $("#selectedverse").load(verseString);
-        $("#verse-choose").change(function () {
-            verse = $(this).val();
-            verseString = (poem + " #" + verse);
-            $("#selectedverse").load(verseString);
-            console.log(verseString);
-            console.log(verse);
-        });
+        let verseChoose = document.querySelector('select');
+        let poemDisplay = document.querySelector('#selectedverse');
+        let verse = "verse1-2.txt";
+
+        function updateVerse(verse) {
+            let verseRequest = new XMLHttpRequest();
+            verseRequest.open('GET', verse);
+            verseRequest.responseType = 'text';
+            verseRequest.onload = function () {
+                poemDisplay.innerHTML = verseRequest.response;
+            };
+            verseRequest.send();
+        };
+        verseChoose.onchange = function () {
+            verse = verseChoose.value;
+            updateVerse(verse);
+        };
+        verseChoose.value = verse;
+        updateVerse(verse);
     </script>
 </body>
 
