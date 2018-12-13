@@ -11,4 +11,8 @@ let name1 = $('#choose-content :selected').text();
 $("#content").text(name1);
 $("#content").load(file1);
 
+// $(this).attr(“id”);
+// or
+// event.trigger.id
+
 
