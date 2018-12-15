@@ -304,7 +304,7 @@ body {
     }
     .GAProjImage {
         grid-row: 1 /span 1;
-        padding-left: 30px;
+        padding-left: 20px;
     }
     #genADescription {
         grid-column-start: 1;
