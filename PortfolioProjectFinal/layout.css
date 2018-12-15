@@ -288,6 +288,15 @@ body {
         grid-template-rows: 1fr;
         
     }
+    #carProjDescription {
+        padding-right: 10%;
+    }
+    .carImages img {
+        padding-right: 10%;
+    }
+    #carProjLinks {
+        padding-left: 5px;
+    }
     .genAWrapper {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 3fr 1fr;
@@ -361,8 +370,17 @@ body {
     }
     .carProjectWrapper {
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
+        grid-template-rows: 575px 1fr 1fr;
         
+    }
+    #carProjDescription {
+        padding-right: 0px;
+    }
+    .carImages img {
+        padding-right: 17%;
+    }
+    #carProjLinks {
+        padding-left: 0px;
     }
     .genAWrapper {
         grid-template-columns: 1fr;
@@ -384,18 +402,21 @@ body {
         grid-column: 1/span 1;
         grid-row-start: 3;
         grid-row-end: 3;
-        padding-left: 5px;
+        padding-left: 0px;
     }
     .partyWrapper {
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
+        grid-template-rows: 375px 1fr 1fr;
 
     } 
     #partyListMain, #partyListDatabase {
-        padding-right: 40%;
+        padding-right: 35%;
     }
     #partyListDescription {
-        padding-right: 50px;
+        padding-bottom: 0px;
+    }
+    #partyListLinks {
+        padding-left: 0px;
     }
     .profiles {
         margin-left: 10%;
