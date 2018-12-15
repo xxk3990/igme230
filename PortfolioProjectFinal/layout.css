@@ -358,11 +358,11 @@ body {
         grid-template-columns: 1fr;
     }
     #picOfMe {
-        padding-right: 10%;
+        padding-left: 0px;
     }
     #aboutMe {
-        margin-left: 10%;
-        margin-right: 10%
+        padding-right: 0px;
+        padding-right: 0px;
     }
     .navBar {
         grid-template-columns: 1fr;
