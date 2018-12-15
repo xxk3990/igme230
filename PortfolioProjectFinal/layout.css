@@ -269,7 +269,7 @@ body {
     #allProjects {
 
         grid-template-columns: 1fr;
-        align-items: center;
+        align-content: center;
 
     }
 
@@ -289,10 +289,11 @@ body {
         
     }
     #carProjDescription {
-        padding-right: 10%;
+        padding-right: 0px;
+        padding-left: 0px;
     }
     .carImages img {
-        padding-right: 10%;
+        align-content: center;
     }
     #carProjLinks {
         padding-left: 5px;
@@ -304,7 +305,7 @@ body {
     }
     .GAProjImage {
         grid-row: 1 /span 1;
-        padding-left: 20px;
+        padding-left: 10px;
     }
     #genADescription {
         grid-column-start: 1;
