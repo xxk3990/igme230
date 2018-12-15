@@ -375,6 +375,7 @@ body {
     }
     #carProjDescription {
         padding-right: 0px;
+        padding-left: 0px;
     }
     .carImages img {
         padding-right: 17%;
@@ -414,6 +415,7 @@ body {
     }
     #partyListDescription {
         padding-bottom: 0px;
+        padding-left: 0px;
     }
     #partyListLinks {
         padding-left: 0px;
